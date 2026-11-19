@@ -6,9 +6,15 @@ import androidx.activity.compose.BackHandler
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.LibraryBooks
@@ -16,10 +22,13 @@ import androidx.compose.material.icons.automirrored.filled.Rule
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Style
 import androidx.compose.material.icons.filled.Tune
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Badge
 import androidx.compose.material3.BadgedBox
+import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
+import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -28,13 +37,17 @@ import androidx.compose.material3.SnackbarHost
 import androidx.compose.material3.SnackbarHostState
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.articlemaster.hsc.ui.AppRoute
@@ -168,6 +181,7 @@ fun EnglishPracticeApp(vm: MainViewModel = viewModel()) {
                                         prefs.copy(darkMode = !currentIsDark)
                                     }
                                 },
+                                onInstallUpdate = vm::downloadAndInstallUpdate,
                                 onDismissUpdate = vm::dismissUpdateBanner
                             )
 
@@ -265,9 +279,88 @@ fun EnglishPracticeApp(vm: MainViewModel = viewModel()) {
                                 onImportJson = vm::importProgressJson,
                                 onResetStats = vm::clearAllProgress,
                                 onClearFlashcards = { vm.clearFlashcards(null) },
-                                onCheckForUpdates = { vm.checkForUpdates(manual = true) }
+                                onCheckForUpdates = { vm.checkForUpdates(manual = true) },
+                                onInstallUpdate = vm::downloadAndInstallUpdate
                             )
                         }
+                    }
+
+                    // Popup dialog when a new update is found on GitHub!
+                    val updateInfo = state.availableUpdate
+                    if (updateInfo != null && state.showUpdateDialog && state.route != AppRoute.Session) {
+                        val ctx = LocalContext.current
+                        val dlProg = state.updateDownloadProgress
+                        AlertDialog(
+                            onDismissRequest = { if (dlProg == null) vm.dismissUpdateDialog() },
+                            title = {
+                                Text(
+                                    "Update Available (${updateInfo.latestTag})",
+                                    fontWeight = FontWeight.Bold
+                                )
+                            },
+                            text = {
+                                Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                                    Text(
+                                        updateInfo.title,
+                                        style = MaterialTheme.typography.bodyMedium.copy(fontWeight = FontWeight.SemiBold)
+                                    )
+                                    if (updateInfo.releaseNotes.isNotBlank()) {
+                                        Text(
+                                            updateInfo.releaseNotes,
+                                            style = MaterialTheme.typography.bodySmall,
+                                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                            maxLines = 6,
+                                            overflow = TextOverflow.Ellipsis
+                                        )
+                                    }
+                                    if (dlProg != null) {
+                                        Spacer(Modifier.height(4.dp))
+                                        LinearProgressIndicator(
+                                            progress = { dlProg },
+                                            modifier = Modifier.fillMaxWidth()
+                                        )
+                                        Text(
+                                            "Downloading APK (${(dlProg * 100).toInt()}%)...",
+                                            style = MaterialTheme.typography.labelSmall
+                                        )
+                                    }
+                                }
+                            },
+                            confirmButton = {
+                                Button(
+                                    onClick = vm::downloadAndInstallUpdate,
+                                    enabled = dlProg == null
+                                ) {
+                                    Text(if (dlProg != null) "Downloading..." else "Update Now")
+                                }
+                            },
+                            dismissButton = {
+                                Row {
+                                    TextButton(
+                                        onClick = {
+                                            runCatching {
+                                                ctx.startActivity(
+                                                    android.content.Intent(
+                                                        android.content.Intent.ACTION_VIEW,
+                                                        android.net.Uri.parse(updateInfo.downloadUrl)
+                                                    )
+                                                )
+                                            }
+                                            vm.dismissUpdateDialog()
+                                        },
+                                        enabled = dlProg == null
+                                    ) {
+                                        Text("Browser")
+                                    }
+                                    TextButton(
+                                        onClick = vm::dismissUpdateDialog,
+                                        enabled = dlProg == null
+                                    ) {
+                                        Text("Later")
+                                    }
+                                }
+                            }
+                        )
                     }
                 }
             }

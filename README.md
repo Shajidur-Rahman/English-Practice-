@@ -8,9 +8,9 @@
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.0-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org/)
 [![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-Material%203-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white)](https://developer.android.com/jetpack/compose)
 [![Passages](https://img.shields.io/badge/Passages-156%20(1%2C560%20Blanks)-0D9488?style=for-the-badge)](#-content-coverage)
-[![Version](https://img.shields.io/badge/Latest-v2.2.0-1D4ED8?style=for-the-badge)](https://github.com/Shajidur-Rahman/English-Practice-/releases/latest)
+[![Version](https://img.shields.io/badge/Latest-v2.3.0-1D4ED8?style=for-the-badge)](https://github.com/Shajidur-Rahman/English-Practice-/releases/latest)
 
-### ⬇️ [Download EnglishPractice.apk (v2.2.0 — Direct Download)](https://github.com/Shajidur-Rahman/English-Practice-/raw/main/download/EnglishPractice.apk)
+### ⬇️ [Download EnglishPractice.apk (v2.3.0 — Direct Download)](https://github.com/Shajidur-Rahman/English-Practice-/raw/main/download/EnglishPractice.apk)
 <sub>Direct Android APK (`v2.2.0`) • Also check <a href="https://github.com/Shajidur-Rahman/English-Practice-/releases">GitHub Releases</a> for future updates (auto-detected inside the app).</sub>
 
 </div>

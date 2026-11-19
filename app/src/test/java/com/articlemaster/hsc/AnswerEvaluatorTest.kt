@@ -223,6 +223,22 @@ class AnswerEvaluatorTest {
             currentVersion = "2.2.0"
         )
         assertTrue(same is UpdateCheckResult.UpToDate)
+
+        // Fallback manifest version check (v2.3.0 > 2.1.0)
+        val manifestNewer = GitHubUpdateChecker.evaluateRelease(
+            tag = "v2.3.0",
+            title = "English Practice v2.3.0",
+            releaseNotes = "Auto-update manifest",
+            htmlUrl = GitHubUpdateChecker.RELEASES_PAGE_URL,
+            apkDownloadUrl = GitHubUpdateChecker.DIRECT_APK_URL,
+            publishedAt = "2026-11-19",
+            currentVersion = "2.1.0"
+        )
+        assertTrue(manifestNewer is UpdateCheckResult.UpdateAvailable)
+        assertEquals(
+            GitHubUpdateChecker.DIRECT_APK_URL,
+            (manifestNewer as UpdateCheckResult.UpdateAvailable).info.downloadUrl
+        )
     }
 
     @Test

@@ -24,33 +24,57 @@ object GitHubUpdateChecker {
     const val REPO_OWNER = "Shajidur-Rahman"
     const val REPO_NAME = "English-Practice-"
     const val LATEST_RELEASE_API = "https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/releases/latest"
+    const val FALLBACK_VERSION_URL = "https://raw.githubusercontent.com/$REPO_OWNER/$REPO_NAME/main/version.json"
     const val RELEASES_PAGE_URL = "https://github.com/$REPO_OWNER/$REPO_NAME/releases"
+    const val DIRECT_APK_URL = "https://github.com/$REPO_OWNER/$REPO_NAME/raw/main/download/EnglishPractice.apk"
 
     fun checkLatestRelease(currentVersion: String): UpdateCheckResult {
-        return try {
-            val url = URL(LATEST_RELEASE_API)
+        val releaseRes = fetchUrl(LATEST_RELEASE_API, acceptHeader = "application/vnd.github+json", currentVersion)
+        if (releaseRes.isSuccess) {
+            val (code, body) = releaseRes.getOrThrow()
+            if (code in 200..299 && body.isNotBlank()) {
+                val parsed = parseReleaseResponse(body, currentVersion)
+                if (parsed is UpdateCheckResult.UpdateAvailable || parsed is UpdateCheckResult.UpToDate) {
+                    return parsed
+                }
+            }
+        }
+
+        // Fallback to raw/main/version.json so updates work immediately even before a GitHub Release tag is published
+        val fallbackRes = fetchUrl(FALLBACK_VERSION_URL, acceptHeader = "application/json", currentVersion)
+        if (fallbackRes.isSuccess) {
+            val (code, body) = fallbackRes.getOrThrow()
+            if (code in 200..299 && body.isNotBlank()) {
+                return parseVersionManifestResponse(body, currentVersion)
+            }
+            if (code == 404) return UpdateCheckResult.NoReleasePublished
+            return UpdateCheckResult.Failed("HTTP $code")
+        }
+
+        val err = fallbackRes.exceptionOrNull() ?: releaseRes.exceptionOrNull()
+        return UpdateCheckResult.Failed(err?.message ?: "Network unavailable")
+    }
+
+    private fun fetchUrl(urlString: String, acceptHeader: String, currentVersion: String): Result<Pair<Int, String>> {
+        return runCatching {
+            val url = URL(urlString)
             val conn = (url.openConnection() as HttpURLConnection).apply {
                 requestMethod = "GET"
                 connectTimeout = 7000
                 readTimeout = 7000
-                setRequestProperty("Accept", "application/vnd.github+json")
+                setRequestProperty("Accept", acceptHeader)
+                setRequestProperty("Cache-Control", "no-cache")
                 setRequestProperty("User-Agent", "EnglishPractice-Android/$currentVersion")
             }
             try {
                 val code = conn.responseCode
-                if (code == 404) {
-                    return UpdateCheckResult.NoReleasePublished
-                }
-                if (code !in 200..299) {
-                    return UpdateCheckResult.Failed("GitHub HTTP $code")
-                }
-                val body = conn.inputStream.bufferedReader().use { it.readText() }
-                parseReleaseResponse(body, currentVersion)
+                val body = if (code in 200..299) {
+                    conn.inputStream.bufferedReader().use { it.readText() }
+                } else ""
+                code to body
             } finally {
                 conn.disconnect()
             }
-        } catch (e: Exception) {
-            UpdateCheckResult.Failed(e.message ?: "Network unavailable")
         }
     }
 
@@ -83,6 +107,24 @@ object GitHubUpdateChecker {
             htmlUrl = htmlUrl,
             apkDownloadUrl = apkUrl,
             publishedAt = published,
+            currentVersion = currentVersion
+        )
+    }
+
+    internal fun parseVersionManifestResponse(rawJson: String, currentVersion: String): UpdateCheckResult {
+        val root = JSONObject(rawJson)
+        val tag = root.optString("version").trim()
+        val title = root.optString("title", "English Practice $tag")
+        val notes = root.optString("notes", "")
+        val url = root.optString("apkUrl", DIRECT_APK_URL)
+        val date = root.optString("date", "")
+        return evaluateRelease(
+            tag = tag,
+            title = title,
+            releaseNotes = notes,
+            htmlUrl = RELEASES_PAGE_URL,
+            apkDownloadUrl = url,
+            publishedAt = date,
             currentVersion = currentVersion
         )
     }

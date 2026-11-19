@@ -4,6 +4,7 @@ import android.app.Application
 import android.graphics.Bitmap
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
+import com.articlemaster.hsc.data.AppUpdateInstaller
 import com.articlemaster.hsc.data.ExerciseRepository
 import com.articlemaster.hsc.data.GitHubUpdateChecker
 import com.articlemaster.hsc.data.ReleaseUpdateInfo
@@ -79,9 +80,11 @@ data class MainUiState(
     val ocrBusyForKey: String? = null,
     val batchOcrProgress: Pair<Int, Int>? = null,
     val statusBanner: String? = null,
-    val appVersionName: String = "2.2.0",
+    val appVersionName: String = "2.3.0",
     val availableUpdate: ReleaseUpdateInfo? = null,
-    val isCheckingUpdate: Boolean = false
+    val showUpdateDialog: Boolean = false,
+    val isCheckingUpdate: Boolean = false,
+    val updateDownloadProgress: Float? = null
 ) {
     val articleExercises: List<ExerciseItem> get() = exercises.filter { it.topic == GrammarTopic.ARTICLE }
     val prepositionExercises: List<ExerciseItem> get() = exercises.filter { it.topic == GrammarTopic.PREPOSITION }
@@ -101,7 +104,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     init {
         val currentVer = runCatching {
             application.packageManager.getPackageInfo(application.packageName, 0).versionName
-        }.getOrNull().orEmpty().ifBlank { "2.2.0" }
+        }.getOrNull().orEmpty().ifBlank { "2.3.0" }
 
         viewModelScope.launch {
             val loadedExercises = withContext(Dispatchers.IO) { repo.loadAllExercises() }
@@ -135,6 +138,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                         it.copy(
                             isCheckingUpdate = false,
                             availableUpdate = result.info,
+                            showUpdateDialog = true,
                             statusBanner = if (manual) "New update ${result.info.latestTag} is available!" else it.statusBanner
                         )
                     }
@@ -168,8 +172,43 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
+    fun dismissUpdateDialog() {
+        _uiState.update { it.copy(showUpdateDialog = false) }
+    }
+
     fun dismissUpdateBanner() {
-        _uiState.update { it.copy(availableUpdate = null) }
+        _uiState.update { it.copy(availableUpdate = null, showUpdateDialog = false) }
+    }
+
+    fun downloadAndInstallUpdate() {
+        val update = _uiState.value.availableUpdate ?: return
+        if (_uiState.value.updateDownloadProgress != null) return
+        val appContext = getApplication<Application>().applicationContext
+        viewModelScope.launch {
+            _uiState.update { it.copy(updateDownloadProgress = 0.01f) }
+            val result = withContext(Dispatchers.IO) {
+                AppUpdateInstaller.downloadApk(appContext, update.downloadUrl) { frac ->
+                    _uiState.update { it.copy(updateDownloadProgress = frac) }
+                }
+            }
+            _uiState.update { it.copy(updateDownloadProgress = null) }
+            result.onSuccess { file ->
+                val started = runCatching {
+                    AppUpdateInstaller.launchApkInstaller(appContext, file)
+                }.getOrDefault(false)
+                if (!started) {
+                    _uiState.update {
+                        it.copy(statusBanner = "Allow 'Install unknown apps' for English Practice, then tap Update again.")
+                    }
+                } else {
+                    _uiState.update { it.copy(showUpdateDialog = false) }
+                }
+            }.onFailure { err ->
+                _uiState.update {
+                    it.copy(statusBanner = "Download failed (${err.message}). Try Browser download.")
+                }
+            }
+        }
     }
 
     fun recordMothersTestMistakes(exercise: ExerciseItem, wrongBlankKeys: List<String>) {

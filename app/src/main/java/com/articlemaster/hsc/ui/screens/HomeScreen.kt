@@ -94,6 +94,7 @@ fun HomeScreen(
     onStartQuickSession: (ExamConfig) -> Unit,
     onContinueNext: (ExerciseItem) -> Unit,
     onToggleTheme: () -> Unit,
+    onInstallUpdate: () -> Unit,
     onDismissUpdate: () -> Unit
 ) {
     val context = LocalContext.current
@@ -227,17 +228,45 @@ fun HomeScreen(
                                     overflow = TextOverflow.Ellipsis
                                 )
                             }
-                            Button(
-                                onClick = {
-                                    runCatching {
-                                        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(update.downloadUrl)))
+                            val dlProg = state.updateDownloadProgress
+                            if (dlProg != null) {
+                                LinearProgressIndicator(
+                                    progress = { dlProg },
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .height(6.dp)
+                                        .clip(RoundedCornerShape(3.dp))
+                                )
+                                Text(
+                                    "Downloading update (${(dlProg * 100).toInt()}%)...",
+                                    style = MaterialTheme.typography.labelSmall,
+                                    color = Color(0xFF065F46)
+                                )
+                            } else {
+                                Row(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                                ) {
+                                    Button(
+                                        onClick = onInstallUpdate,
+                                        modifier = Modifier.weight(1.3f),
+                                        shape = RoundedCornerShape(10.dp),
+                                        contentPadding = PaddingValues(vertical = 8.dp)
+                                    ) {
+                                        Text("Install Update (${update.latestTag})", fontWeight = FontWeight.Bold, maxLines = 1)
                                     }
-                                },
-                                modifier = Modifier.fillMaxWidth(),
-                                shape = RoundedCornerShape(10.dp),
-                                contentPadding = PaddingValues(vertical = 8.dp)
-                            ) {
-                                Text("Download Update (${update.latestTag})", fontWeight = FontWeight.Bold)
+                                    FilledTonalButton(
+                                        onClick = {
+                                            runCatching {
+                                                context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(update.downloadUrl)))
+                                            }
+                                        },
+                                        shape = RoundedCornerShape(10.dp),
+                                        contentPadding = PaddingValues(horizontal = 10.dp, vertical = 8.dp)
+                                    ) {
+                                        Text("Browser", maxLines = 1)
+                                    }
+                                }
                             }
                         }
                     }

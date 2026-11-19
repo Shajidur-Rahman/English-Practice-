@@ -95,7 +95,8 @@ fun SolutionReferenceScreen(
     onImportJson: (String) -> Unit,
     onResetStats: () -> Unit,
     onClearFlashcards: () -> Unit,
-    onCheckForUpdates: () -> Unit
+    onCheckForUpdates: () -> Unit,
+    onInstallUpdate: () -> Unit
 ) {
     var tabIndex by remember { mutableIntStateOf(0) }
     var search by remember { mutableStateOf("") }
@@ -366,18 +367,26 @@ fun SolutionReferenceScreen(
                                     }
 
                                     state.availableUpdate?.let { upd ->
-                                        Button(
-                                            onClick = {
-                                                runCatching {
-                                                    context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(upd.downloadUrl)))
-                                                }
-                                            },
-                                            modifier = Modifier.fillMaxWidth(),
-                                            shape = RoundedCornerShape(10.dp)
-                                        ) {
-                                            Icon(Icons.Default.Download, contentDescription = null, modifier = Modifier.size(16.dp))
-                                            Spacer(Modifier.width(6.dp))
-                                            Text("Download New Update (${upd.latestTag})", fontWeight = FontWeight.Bold)
+                                        val dlProg = state.updateDownloadProgress
+                                        if (dlProg != null) {
+                                            LinearProgressIndicator(
+                                                progress = { dlProg },
+                                                modifier = Modifier.fillMaxWidth()
+                                            )
+                                            Text(
+                                                "Downloading update (${(dlProg * 100).toInt()}%)...",
+                                                style = MaterialTheme.typography.labelSmall
+                                            )
+                                        } else {
+                                            Button(
+                                                onClick = onInstallUpdate,
+                                                modifier = Modifier.fillMaxWidth(),
+                                                shape = RoundedCornerShape(10.dp)
+                                            ) {
+                                                Icon(Icons.Default.Download, contentDescription = null, modifier = Modifier.size(16.dp))
+                                                Spacer(Modifier.width(6.dp))
+                                                Text("Install New Update (${upd.latestTag})", fontWeight = FontWeight.Bold)
+                                            }
                                         }
                                     }
 

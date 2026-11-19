@@ -10,8 +10,8 @@
 [![Passages](https://img.shields.io/badge/Passages-156%20(1%2C560%20Blanks)-0D9488?style=for-the-badge)](#-content-coverage)
 [![Version](https://img.shields.io/badge/Latest-v2.1.0-1D4ED8?style=for-the-badge)](https://github.com/Shajidur-Rahman/English-Practice-/releases/latest)
 
-### ⬇️ [Download EnglishPractice.apk (Latest Release)](https://github.com/Shajidur-Rahman/English-Practice-/releases/latest/download/EnglishPractice.apk)
-<sub>Or browse all versions on the <a href="https://github.com/Shajidur-Rahman/English-Practice-/releases">GitHub Releases page</a> • Built-in in-app updater notifies you automatically when new versions drop.</sub>
+### ⬇️ [Download EnglishPractice.apk (v2.1.0 — Direct Download)](https://github.com/Shajidur-Rahman/English-Practice-/raw/main/download/EnglishPractice.apk)
+<sub>Direct 75 MB Android APK (`v2.1.0`) • Also check <a href="https://github.com/Shajidur-Rahman/English-Practice-/releases">GitHub Releases</a> for future updates (auto-detected inside the app).</sub>
 
 </div>
 
@@ -73,7 +73,7 @@ Never lose track of the blanks you miss:
 
 ## 📲 How to Install on Android
 
-1. Tap **[Download EnglishPractice.apk](https://github.com/Shajidur-Rahman/English-Practice-/releases/latest/download/EnglishPractice.apk)** on your phone.
+1. Tap **[Download EnglishPractice.apk](https://github.com/Shajidur-Rahman/English-Practice-/raw/main/download/EnglishPractice.apk)** on your phone.
 2. Open the downloaded `.apk` file from your notifications or **My Files → Downloads**.
 3. If prompted, allow **Install unknown apps** for your browser or file manager, then tap **Install**.
 

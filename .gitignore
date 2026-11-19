@@ -9,6 +9,7 @@ app/build/
 .externalNativeBuild/
 .cxx/
 *.apk
+!download/EnglishPractice.apk
 *.aab
 *.jks
 *.keystore

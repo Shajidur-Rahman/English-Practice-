@@ -1,0 +1,1526 @@
+{
+  "chapter": "Chapter 01: Use of Articles",
+  "total": 76,
+  "exercises": [
+    {
+      "id": 1,
+      "page": 49,
+      "boardInfo": "Dhaka Board-2019",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_01.webp",
+      "answers": {
+        "a": "The",
+        "b": "an",
+        "c": "a",
+        "d": "the",
+        "e": "the",
+        "f": "a",
+        "g": "The",
+        "h": "×",
+        "i": "×",
+        "j": "a"
+      },
+      "note": null
+    },
+    {
+      "id": 2,
+      "page": 49,
+      "boardInfo": "Rajshahi Board-2019",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_02.webp",
+      "answers": {
+        "a": "the",
+        "b": "a",
+        "c": "an",
+        "d": "The",
+        "e": "×",
+        "f": "the",
+        "g": "a",
+        "h": "The",
+        "i": "the",
+        "j": "a"
+      },
+      "note": null
+    },
+    {
+      "id": 3,
+      "page": 49,
+      "boardInfo": "Dinajpur Board-2019",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_03.webp",
+      "answers": {
+        "a": "a",
+        "b": "a/the",
+        "c": "A/The",
+        "d": "the",
+        "e": "the/a",
+        "f": "the",
+        "g": "the",
+        "h": "×",
+        "i": "the",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 4,
+      "page": 49,
+      "boardInfo": "Jashore Board-2019",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_04.webp",
+      "answers": {
+        "a": "the",
+        "b": "The",
+        "c": "The",
+        "d": "×",
+        "e": "a",
+        "f": "the",
+        "g": "a",
+        "h": "the",
+        "i": "×",
+        "j": "the"
+      },
+      "note": null
+    },
+    {
+      "id": 5,
+      "page": 49,
+      "boardInfo": "Cumilla Board-2019",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_05.webp",
+      "answers": {
+        "a": "×",
+        "b": "the",
+        "c": "×",
+        "d": "×",
+        "e": "the/×",
+        "f": "An",
+        "g": "×/the",
+        "h": "a/the",
+        "i": "×",
+        "j": "the"
+      },
+      "note": null
+    },
+    {
+      "id": 6,
+      "page": 49,
+      "boardInfo": "Chattogram Board-2019; Dhaka Board-2017",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_06.webp",
+      "answers": {
+        "a": "a",
+        "b": "a",
+        "c": "×",
+        "d": "A/the",
+        "e": "a",
+        "f": "×",
+        "g": "the",
+        "h": "the",
+        "i": "an",
+        "j": "the"
+      },
+      "note": null
+    },
+    {
+      "id": 7,
+      "page": 49,
+      "boardInfo": "Sylhet Board-2019",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_07.webp",
+      "answers": {
+        "a": "an",
+        "b": "the",
+        "c": "an",
+        "d": "a",
+        "e": "the",
+        "f": "The",
+        "g": "a/×",
+        "h": "a",
+        "i": "the",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 8,
+      "page": 49,
+      "boardInfo": "Barishal Board-2019",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_08.webp",
+      "answers": {
+        "a": "a",
+        "b": "an",
+        "c": "×",
+        "d": "×",
+        "e": "a",
+        "f": "an",
+        "g": "the",
+        "h": "the",
+        "i": "the",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 9,
+      "page": 49,
+      "boardInfo": "(Ka Set) Dhaka/Dinajpur/Jashore/Sylhet Board-2018",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_09.webp",
+      "answers": {
+        "a": "an",
+        "b": "×",
+        "c": "a",
+        "d": "A",
+        "e": "the",
+        "f": "The",
+        "g": "a",
+        "h": "A",
+        "i": "an",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 10,
+      "page": 50,
+      "boardInfo": "(Kha Set) Rajshahi/Cumilla/Chattogram/Barishal Board-2018",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_10.webp",
+      "answers": {
+        "a": "the",
+        "b": "the",
+        "c": "a",
+        "d": "×",
+        "e": "a",
+        "f": "the",
+        "g": "a",
+        "h": "an",
+        "i": "the",
+        "j": "a"
+      },
+      "note": null
+    },
+    {
+      "id": 11,
+      "page": 50,
+      "boardInfo": "Rajshahi Board-2017",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_11.webp",
+      "answers": {
+        "a": "the",
+        "b": "the/×",
+        "c": "a",
+        "d": "the",
+        "e": "the",
+        "f": "The",
+        "g": "a",
+        "h": "A",
+        "i": "the",
+        "j": "a/the"
+      },
+      "note": null
+    },
+    {
+      "id": 12,
+      "page": 50,
+      "boardInfo": "Dinajpur Board-2017",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_12.webp",
+      "answers": {
+        "a": "a",
+        "b": "the",
+        "c": "the",
+        "d": "×",
+        "e": "an",
+        "f": "a",
+        "g": "the",
+        "h": "the",
+        "i": "the",
+        "j": "A"
+      },
+      "note": null
+    },
+    {
+      "id": 13,
+      "page": 50,
+      "boardInfo": "Jashore Board-2017",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_13.webp",
+      "answers": {
+        "a": "the",
+        "b": "a",
+        "c": "the",
+        "d": "a",
+        "e": "×",
+        "f": "a",
+        "g": "the",
+        "h": "a/the",
+        "i": "a/the",
+        "j": "the"
+      },
+      "note": null
+    },
+    {
+      "id": 14,
+      "page": 50,
+      "boardInfo": "Cumilla Board-2017",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_14.webp",
+      "answers": {
+        "a": "the",
+        "b": "the",
+        "c": "an",
+        "d": "The",
+        "e": "a",
+        "f": "an",
+        "g": "×/the",
+        "h": "the",
+        "i": "an",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 15,
+      "page": 50,
+      "boardInfo": "Chattogram Board-2017",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_15.webp",
+      "answers": {
+        "a": "the",
+        "b": "the",
+        "c": "a",
+        "d": "×",
+        "e": "a",
+        "f": "the",
+        "g": "the",
+        "h": "the",
+        "i": "the",
+        "j": "the"
+      },
+      "note": null
+    },
+    {
+      "id": 16,
+      "page": 50,
+      "boardInfo": "Sylhet Board-2017",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_16.webp",
+      "answers": {
+        "a": "an",
+        "b": "a",
+        "c": "a",
+        "d": "the",
+        "e": "a",
+        "f": "the",
+        "g": "×",
+        "h": "×",
+        "i": "the",
+        "j": "an"
+      },
+      "note": null
+    },
+    {
+      "id": 17,
+      "page": 50,
+      "boardInfo": "Dhaka Board-2016",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_17.webp",
+      "answers": {
+        "a": "a",
+        "b": "×",
+        "c": "the",
+        "d": "the",
+        "e": "a",
+        "f": "an",
+        "g": "an",
+        "h": "a",
+        "i": "the",
+        "j": "the"
+      },
+      "note": null
+    },
+    {
+      "id": 18,
+      "page": 51,
+      "boardInfo": "Rajshahi Board-2016",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_18.webp",
+      "answers": {
+        "a": "the",
+        "b": "an",
+        "c": "A",
+        "d": "the",
+        "e": "the",
+        "f": "the",
+        "g": "a",
+        "h": "×",
+        "i": "a",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 19,
+      "page": 51,
+      "boardInfo": "Dinajpur Board-2016",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_19.webp",
+      "answers": {
+        "a": "×",
+        "b": "a",
+        "c": "×",
+        "d": "the",
+        "e": "×",
+        "f": "a",
+        "g": "the",
+        "h": "the",
+        "i": "×",
+        "j": "the"
+      },
+      "note": null
+    },
+    {
+      "id": 20,
+      "page": 51,
+      "boardInfo": "Jashore Board-2016",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_20.webp",
+      "answers": {
+        "a": "a",
+        "b": "the",
+        "c": "the",
+        "d": "a",
+        "e": "the",
+        "f": "×",
+        "g": "the",
+        "h": "the",
+        "i": "The",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 21,
+      "page": 51,
+      "boardInfo": "Cumilla Board-2016",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_21.webp",
+      "answers": {
+        "a": "an",
+        "b": "an",
+        "c": "the",
+        "d": "the",
+        "e": "a",
+        "f": "the",
+        "g": "a",
+        "h": "the",
+        "i": "A",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 22,
+      "page": 51,
+      "boardInfo": "Chattogram Board-2016",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_22.webp",
+      "answers": {
+        "a": "the",
+        "b": "A",
+        "c": "the",
+        "d": "a",
+        "e": "the",
+        "f": "a",
+        "g": "the",
+        "h": "×",
+        "i": "the",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 23,
+      "page": 51,
+      "boardInfo": "Sylhet Board-2016",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_23.webp",
+      "answers": {
+        "a": "an",
+        "b": "×",
+        "c": "×",
+        "d": "×",
+        "e": "A",
+        "f": "a",
+        "g": "the",
+        "h": "a",
+        "i": "the",
+        "j": "a"
+      },
+      "note": null
+    },
+    {
+      "id": 24,
+      "page": 51,
+      "boardInfo": "Barishal Board-2016",
+      "isBoardQuestion": true,
+      "imageAsset": "passages/p_24.webp",
+      "answers": {
+        "a": "a",
+        "b": "a",
+        "c": "The",
+        "d": "×",
+        "e": "an",
+        "f": "an",
+        "g": "the",
+        "h": "the",
+        "i": "the",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 25,
+      "page": 51,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_25.webp",
+      "answers": {
+        "a": "The",
+        "b": "a",
+        "c": "×",
+        "d": "a",
+        "e": "×",
+        "f": "the",
+        "g": "an",
+        "h": "an",
+        "i": "the",
+        "j": "a"
+      },
+      "note": null
+    },
+    {
+      "id": 26,
+      "page": 51,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_26.webp",
+      "answers": {
+        "a": "the",
+        "b": "the",
+        "c": "the",
+        "d": "the",
+        "e": "a",
+        "f": "An",
+        "g": "The",
+        "h": "×",
+        "i": "the",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 27,
+      "page": 51,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_27.webp",
+      "answers": {
+        "a": "an",
+        "b": "a",
+        "c": "×",
+        "d": "×",
+        "e": "the",
+        "f": "a",
+        "g": "the",
+        "h": "the",
+        "i": "A",
+        "j": "an"
+      },
+      "note": null
+    },
+    {
+      "id": 28,
+      "page": 52,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_28.webp",
+      "answers": {
+        "a": "the",
+        "b": "The",
+        "c": "a",
+        "d": "×",
+        "e": "an",
+        "f": "a",
+        "g": "an",
+        "h": "the",
+        "i": "×",
+        "j": "the"
+      },
+      "note": "Book print note: Blank (e) is misprinted as '(c)' in the passage."
+    },
+    {
+      "id": 29,
+      "page": 52,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_29.webp",
+      "answers": {
+        "a": "an",
+        "b": "the",
+        "c": "×",
+        "d": "×",
+        "e": "the",
+        "f": "×",
+        "g": "a",
+        "h": "The",
+        "i": "the",
+        "j": "the"
+      },
+      "note": null
+    },
+    {
+      "id": 30,
+      "page": 52,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_30.webp",
+      "answers": {
+        "a": "a",
+        "b": "×",
+        "c": "the",
+        "d": "the",
+        "e": "the",
+        "f": "The",
+        "g": "the",
+        "h": "the",
+        "i": "×",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 31,
+      "page": 52,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_31.webp",
+      "answers": {
+        "a": "an",
+        "b": "a",
+        "c": "a",
+        "d": "×",
+        "e": "×",
+        "f": "a",
+        "g": "the",
+        "h": "an",
+        "i": "a",
+        "j": "the"
+      },
+      "note": null
+    },
+    {
+      "id": 32,
+      "page": 52,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_32.webp",
+      "answers": {
+        "a": "a",
+        "b": "×",
+        "c": "the",
+        "d": "the",
+        "e": "a",
+        "f": "an",
+        "g": "A",
+        "h": "the",
+        "i": "an",
+        "j": "an"
+      },
+      "note": null
+    },
+    {
+      "id": 33,
+      "page": 52,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_33.webp",
+      "answers": {
+        "a": "an",
+        "b": "a",
+        "c": "the",
+        "d": "the",
+        "e": "×",
+        "f": "×",
+        "g": "the",
+        "h": "the",
+        "i": "the",
+        "j": "an"
+      },
+      "note": null
+    },
+    {
+      "id": 34,
+      "page": 52,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_34.webp",
+      "answers": {
+        "a": "the",
+        "b": "a",
+        "c": "The",
+        "d": "×",
+        "e": "a",
+        "f": "×",
+        "g": "the",
+        "h": "a",
+        "i": "an",
+        "j": "a"
+      },
+      "note": null
+    },
+    {
+      "id": 35,
+      "page": 52,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_35.webp",
+      "answers": {
+        "a": "an",
+        "b": "a",
+        "c": "a",
+        "d": "an",
+        "e": "a",
+        "f": "an",
+        "g": "×",
+        "h": "the",
+        "i": "×",
+        "j": "the"
+      },
+      "note": null
+    },
+    {
+      "id": 36,
+      "page": 52,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_36.webp",
+      "answers": {
+        "a": "an",
+        "b": "the",
+        "c": "A",
+        "d": "the",
+        "e": "×",
+        "f": "a",
+        "g": "an",
+        "h": "the",
+        "i": "×",
+        "j": "a"
+      },
+      "note": null
+    },
+    {
+      "id": 37,
+      "page": 53,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_37.webp",
+      "answers": {
+        "a": "×",
+        "b": "an",
+        "c": "the",
+        "d": "the",
+        "e": "the",
+        "f": "An",
+        "g": "the",
+        "h": "the",
+        "i": "the",
+        "j": "the"
+      },
+      "note": null
+    },
+    {
+      "id": 38,
+      "page": 53,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_38.webp",
+      "answers": {
+        "a": "A",
+        "b": "×",
+        "c": "an",
+        "d": "×",
+        "e": "×",
+        "f": "the",
+        "g": "×",
+        "h": "the",
+        "i": "×",
+        "j": "a"
+      },
+      "note": null
+    },
+    {
+      "id": 39,
+      "page": 53,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_39.webp",
+      "answers": {
+        "a": "×",
+        "b": "a",
+        "c": "the",
+        "d": "a",
+        "e": "×",
+        "f": "×",
+        "g": "×",
+        "h": "the",
+        "i": "the",
+        "j": "the"
+      },
+      "note": null
+    },
+    {
+      "id": 40,
+      "page": 53,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_40.webp",
+      "answers": {
+        "a": "an",
+        "b": "an",
+        "c": "an",
+        "d": "the",
+        "e": "the",
+        "f": "×",
+        "g": "an",
+        "h": "×",
+        "i": "an",
+        "j": "a"
+      },
+      "note": null
+    },
+    {
+      "id": 41,
+      "page": 53,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_41.webp",
+      "answers": {
+        "a": "a",
+        "b": "the",
+        "c": "×",
+        "d": "a",
+        "e": "a",
+        "f": "an",
+        "g": "the",
+        "h": "a",
+        "i": "The",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 42,
+      "page": 53,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_42.webp",
+      "answers": {
+        "a": "an",
+        "b": "×",
+        "c": "×",
+        "d": "an",
+        "e": "a",
+        "f": "×",
+        "g": "×",
+        "h": "the",
+        "i": "the",
+        "j": "the"
+      },
+      "note": null
+    },
+    {
+      "id": 43,
+      "page": 53,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_43.webp",
+      "answers": {
+        "a": "a",
+        "b": "the",
+        "c": "a",
+        "d": "the",
+        "e": "the",
+        "f": "the",
+        "g": "the",
+        "h": "An",
+        "i": "The",
+        "j": "an"
+      },
+      "note": null
+    },
+    {
+      "id": 44,
+      "page": 53,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_44.webp",
+      "answers": {
+        "a": "a",
+        "b": "a",
+        "c": "an",
+        "d": "the",
+        "e": "the",
+        "f": "the",
+        "g": "a",
+        "h": "the",
+        "i": "×",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 45,
+      "page": 53,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_45.webp",
+      "answers": {
+        "a": "the",
+        "b": "the",
+        "c": "an",
+        "d": "the",
+        "e": "the",
+        "f": "The",
+        "g": "the",
+        "h": "the",
+        "i": "the",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 46,
+      "page": 53,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_46.webp",
+      "answers": {
+        "a": "a",
+        "b": "×",
+        "c": "the",
+        "d": "×",
+        "e": "an",
+        "f": "the",
+        "g": "a",
+        "h": "the",
+        "i": "a",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 47,
+      "page": 53,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_47.webp",
+      "answers": {
+        "a": "the",
+        "b": "the",
+        "c": "×",
+        "d": "a",
+        "e": "×",
+        "f": "a",
+        "g": "the",
+        "h": "the",
+        "i": "an",
+        "j": "the"
+      },
+      "note": null
+    },
+    {
+      "id": 48,
+      "page": 54,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_48.webp",
+      "answers": {
+        "a": "×",
+        "b": "a",
+        "c": "the",
+        "d": "the",
+        "e": "an",
+        "f": "a",
+        "g": "the",
+        "h": "a",
+        "i": "×",
+        "j": "the"
+      },
+      "note": null
+    },
+    {
+      "id": 49,
+      "page": 54,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_49.webp",
+      "answers": {
+        "a": "The",
+        "b": "an",
+        "c": "the",
+        "d": "a",
+        "e": "×",
+        "f": "The",
+        "g": "the",
+        "h": "a",
+        "i": "the",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 50,
+      "page": 54,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_50.webp",
+      "answers": {
+        "a": "A",
+        "b": "an",
+        "c": "the",
+        "d": "an",
+        "e": "A",
+        "f": "the",
+        "g": "an",
+        "h": "an",
+        "i": "the",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 51,
+      "page": 54,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_51.webp",
+      "answers": {
+        "a": "The",
+        "b": "the",
+        "c": "the",
+        "d": "a",
+        "e": "×",
+        "f": "an",
+        "g": "The",
+        "h": "×",
+        "i": "the",
+        "j": "the"
+      },
+      "note": null
+    },
+    {
+      "id": 52,
+      "page": 54,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_52.webp",
+      "answers": {
+        "a": "a",
+        "b": "An",
+        "c": "the",
+        "d": "a",
+        "e": "×",
+        "f": "a",
+        "g": "×",
+        "h": "the",
+        "i": "the",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 53,
+      "page": 54,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_53.webp",
+      "answers": {
+        "a": "An",
+        "b": "an",
+        "c": "the",
+        "d": "an",
+        "e": "a",
+        "f": "The",
+        "g": "×",
+        "h": "the",
+        "i": "the",
+        "j": "the"
+      },
+      "note": null
+    },
+    {
+      "id": 54,
+      "page": 54,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_54.webp",
+      "answers": {
+        "a": "×",
+        "b": "a",
+        "c": "the",
+        "d": "the",
+        "e": "the",
+        "f": "an",
+        "g": "×",
+        "h": "the",
+        "i": "An",
+        "j": "An"
+      },
+      "note": null
+    },
+    {
+      "id": 55,
+      "page": 54,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_55.webp",
+      "answers": {
+        "a": "an",
+        "b": "the",
+        "c": "a",
+        "d": "an",
+        "e": "the",
+        "f": "a",
+        "g": "a",
+        "h": "×",
+        "i": "an",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 56,
+      "page": 54,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_56.webp",
+      "answers": {
+        "a": "an",
+        "b": "an",
+        "c": "a",
+        "d": "a",
+        "e": "×",
+        "f": "a",
+        "g": "the",
+        "h": "×",
+        "i": "The",
+        "j": "a"
+      },
+      "note": null
+    },
+    {
+      "id": 57,
+      "page": 54,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_57.webp",
+      "answers": {
+        "a": "a",
+        "b": "A",
+        "c": "a",
+        "d": "the",
+        "e": "a",
+        "f": "the",
+        "g": "a",
+        "h": "The",
+        "i": "×",
+        "j": "the"
+      },
+      "note": null
+    },
+    {
+      "id": 58,
+      "page": 55,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_58.webp",
+      "answers": {
+        "a": "An",
+        "b": "an",
+        "c": "an",
+        "d": "The",
+        "e": "the",
+        "f": "×",
+        "g": "the",
+        "h": "the",
+        "i": "the",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 59,
+      "page": 55,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_59.webp",
+      "answers": {
+        "a": "the",
+        "b": "the",
+        "c": "a",
+        "d": "×",
+        "e": "the",
+        "f": "×",
+        "g": "×",
+        "h": "a",
+        "i": "an",
+        "j": "a"
+      },
+      "note": null
+    },
+    {
+      "id": 60,
+      "page": 55,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_60.webp",
+      "answers": {
+        "a": "a",
+        "b": "an",
+        "c": "A",
+        "d": "a",
+        "e": "a",
+        "f": "the",
+        "g": "the",
+        "h": "the",
+        "i": "the",
+        "j": "a"
+      },
+      "note": null
+    },
+    {
+      "id": 61,
+      "page": 55,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_61.webp",
+      "answers": {
+        "a": "a",
+        "b": "×",
+        "c": "an",
+        "d": "a",
+        "e": "a",
+        "f": "an",
+        "g": "the",
+        "h": "a",
+        "i": "an",
+        "j": "a"
+      },
+      "note": null
+    },
+    {
+      "id": 62,
+      "page": 55,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_62.webp",
+      "answers": {
+        "a": "An",
+        "b": "an",
+        "c": "an",
+        "d": "an",
+        "e": "the",
+        "f": "the",
+        "g": "×",
+        "h": "an",
+        "i": "a",
+        "j": "a"
+      },
+      "note": null
+    },
+    {
+      "id": 63,
+      "page": 55,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_63.webp",
+      "answers": {
+        "a": "the",
+        "b": "a",
+        "c": "an",
+        "d": "a",
+        "e": "×",
+        "f": "the",
+        "g": "×",
+        "h": "the",
+        "i": "a",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 64,
+      "page": 55,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_64.webp",
+      "answers": {
+        "a": "The",
+        "b": "the",
+        "c": "×",
+        "d": "the",
+        "e": "the",
+        "f": "×",
+        "g": "the",
+        "h": "a",
+        "i": "an",
+        "j": "the"
+      },
+      "note": null
+    },
+    {
+      "id": 65,
+      "page": 55,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_65.webp",
+      "answers": {
+        "a": "×",
+        "b": "The",
+        "c": "the",
+        "d": "the",
+        "e": "×",
+        "f": "The",
+        "g": "the",
+        "h": "a",
+        "i": "a",
+        "j": "a"
+      },
+      "note": null
+    },
+    {
+      "id": 66,
+      "page": 55,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_66.webp",
+      "answers": {
+        "a": "an",
+        "b": "an",
+        "c": "an",
+        "d": "a",
+        "e": "a",
+        "f": "×",
+        "g": "a",
+        "h": "a",
+        "i": "an",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 67,
+      "page": 55,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_67.webp",
+      "answers": {
+        "a": "×",
+        "b": "an",
+        "c": "an",
+        "d": "an",
+        "e": "the",
+        "f": "the",
+        "g": "the",
+        "h": "the",
+        "i": "the",
+        "j": "a"
+      },
+      "note": null
+    },
+    {
+      "id": 68,
+      "page": 56,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_68.webp",
+      "answers": {
+        "a": "the",
+        "b": "the",
+        "c": "×",
+        "d": "the",
+        "e": "A",
+        "f": "The",
+        "g": "the",
+        "h": "The",
+        "i": "a",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 69,
+      "page": 56,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_69.webp",
+      "answers": {
+        "a": "×",
+        "b": "the",
+        "c": "A",
+        "d": "the",
+        "e": "an",
+        "f": "a",
+        "g": "A",
+        "h": "the",
+        "i": "the",
+        "j": "a"
+      },
+      "note": null
+    },
+    {
+      "id": 70,
+      "page": 56,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_70.webp",
+      "answers": {
+        "a": "a",
+        "b": "the",
+        "c": "a",
+        "d": "×",
+        "e": "the",
+        "f": "the",
+        "g": "the",
+        "h": "the",
+        "i": "×",
+        "j": "the"
+      },
+      "note": null
+    },
+    {
+      "id": 71,
+      "page": 56,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_71.webp",
+      "answers": {
+        "a": "a",
+        "b": "×",
+        "c": "the",
+        "d": "an",
+        "e": "a",
+        "f": "the",
+        "g": "an",
+        "h": "the",
+        "i": "an",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 72,
+      "page": 56,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_72.webp",
+      "answers": {
+        "a": "an",
+        "b": "a",
+        "c": "the",
+        "d": "×",
+        "e": "the",
+        "f": "×",
+        "g": "a",
+        "h": "a",
+        "i": "×",
+        "j": "the"
+      },
+      "note": null
+    },
+    {
+      "id": 73,
+      "page": 56,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_73.webp",
+      "answers": {
+        "a": "the",
+        "b": "the",
+        "c": "the",
+        "d": "A",
+        "e": "×",
+        "f": "the",
+        "g": "The",
+        "h": "an",
+        "i": "a",
+        "j": "the"
+      },
+      "note": null
+    },
+    {
+      "id": 74,
+      "page": 56,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_74.webp",
+      "answers": {
+        "a": "×",
+        "b": "a",
+        "c": "a",
+        "d": "the",
+        "e": "a",
+        "f": "the",
+        "g": "a",
+        "h": "the",
+        "i": "an",
+        "j": "an"
+      },
+      "note": null
+    },
+    {
+      "id": 75,
+      "page": 56,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_75.webp",
+      "answers": {
+        "a": "A",
+        "b": "the",
+        "c": "the",
+        "d": "×",
+        "e": "the",
+        "f": "a",
+        "g": "the",
+        "h": "a",
+        "i": "the",
+        "j": "×"
+      },
+      "note": null
+    },
+    {
+      "id": 76,
+      "page": 56,
+      "boardInfo": "Practice Exercise",
+      "isBoardQuestion": false,
+      "imageAsset": "passages/p_76.webp",
+      "answers": {
+        "a": "The",
+        "b": "a",
+        "c": "the",
+        "d": "the",
+        "e": "a",
+        "f": "an",
+        "g": "an",
+        "h": "the",
+        "i": "a",
+        "j": "×"
+      },
+      "note": null
+    }
+  ]
+}

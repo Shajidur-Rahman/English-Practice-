@@ -202,8 +202,8 @@ fun EnglishPracticeApp(vm: MainViewModel = viewModel()) {
                                 state = state,
                                 loadBitmap = vm::loadPassageBitmap,
                                 onSelectTopic = vm::selectTopic,
-                                onBack = { vm.navigateTo(AppRoute.Home) },
-                                onSaveMistakesToFlashcards = vm::recordMothersTestMistakes
+                                onUpdatePreferences = vm::updatePreferences,
+                                onBack = { vm.navigateTo(AppRoute.Home) }
                             )
 
                             AppRoute.Session -> {

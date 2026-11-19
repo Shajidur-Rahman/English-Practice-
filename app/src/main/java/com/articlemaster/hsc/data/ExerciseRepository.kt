@@ -11,6 +11,7 @@ import com.articlemaster.hsc.model.ExamTopicFilter
 import com.articlemaster.hsc.model.ExerciseItem
 import com.articlemaster.hsc.model.ExerciseStats
 import com.articlemaster.hsc.model.GrammarTopic
+import com.articlemaster.hsc.model.MothersLayoutMode
 import com.articlemaster.hsc.model.SessionType
 import com.articlemaster.hsc.model.UserProgressData
 import org.json.JSONArray
@@ -155,6 +156,9 @@ class ExerciseRepository(private val context: Context) {
         prefObj.put("defaultHscHalfMark", data.preferences.defaultHscHalfMark)
         prefObj.put("preferTextViewWhenAvailable", data.preferences.preferTextViewWhenAvailable)
         prefObj.put("autoSaveMistakesToFlashcards", data.preferences.autoSaveMistakesToFlashcards)
+        prefObj.put("mothersLayout", data.preferences.mothersLayout.name)
+        prefObj.put("mothersTextScale", data.preferences.mothersTextScale.toDouble())
+        prefObj.put("mothersMinimalHeader", data.preferences.mothersMinimalHeader)
         root.put("preferences", prefObj)
 
         if (includeFlashcards) {
@@ -260,7 +264,12 @@ class ExerciseRepository(private val context: Context) {
                 defaultStrictCase = pObj.optBoolean("defaultStrictCase", false),
                 defaultHscHalfMark = pObj.optBoolean("defaultHscHalfMark", true),
                 preferTextViewWhenAvailable = pObj.optBoolean("preferTextViewWhenAvailable", true),
-                autoSaveMistakesToFlashcards = pObj.optBoolean("autoSaveMistakesToFlashcards", true)
+                autoSaveMistakesToFlashcards = pObj.optBoolean("autoSaveMistakesToFlashcards", true),
+                mothersLayout = runCatching {
+                    MothersLayoutMode.valueOf(pObj.optString("mothersLayout", MothersLayoutMode.SPLIT_5_5.name))
+                }.getOrDefault(MothersLayoutMode.SPLIT_5_5),
+                mothersTextScale = pObj.optDouble("mothersTextScale", 1.15).toFloat().coerceIn(0.85f, 1.8f),
+                mothersMinimalHeader = pObj.optBoolean("mothersMinimalHeader", false)
             )
         } else {
             AppPreferences()

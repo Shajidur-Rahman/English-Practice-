@@ -79,7 +79,7 @@ data class MainUiState(
     val ocrBusyForKey: String? = null,
     val batchOcrProgress: Pair<Int, Int>? = null,
     val statusBanner: String? = null,
-    val appVersionName: String = "2.1.0",
+    val appVersionName: String = "2.2.0",
     val availableUpdate: ReleaseUpdateInfo? = null,
     val isCheckingUpdate: Boolean = false
 ) {
@@ -101,7 +101,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     init {
         val currentVer = runCatching {
             application.packageManager.getPackageInfo(application.packageName, 0).versionName
-        }.getOrNull().orEmpty().ifBlank { "2.1.0" }
+        }.getOrNull().orEmpty().ifBlank { "2.2.0" }
 
         viewModelScope.launch {
             val loadedExercises = withContext(Dispatchers.IO) { repo.loadAllExercises() }

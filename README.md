@@ -8,10 +8,10 @@
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.0-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org/)
 [![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-Material%203-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white)](https://developer.android.com/jetpack/compose)
 [![Passages](https://img.shields.io/badge/Passages-156%20(1%2C560%20Blanks)-0D9488?style=for-the-badge)](#-content-coverage)
-[![Version](https://img.shields.io/badge/Latest-v2.1.0-1D4ED8?style=for-the-badge)](https://github.com/Shajidur-Rahman/English-Practice-/releases/latest)
+[![Version](https://img.shields.io/badge/Latest-v2.2.0-1D4ED8?style=for-the-badge)](https://github.com/Shajidur-Rahman/English-Practice-/releases/latest)
 
-### ⬇️ [Download EnglishPractice.apk (v2.1.0 — Direct Download)](https://github.com/Shajidur-Rahman/English-Practice-/raw/main/download/EnglishPractice.apk)
-<sub>Direct 75 MB Android APK (`v2.1.0`) • Also check <a href="https://github.com/Shajidur-Rahman/English-Practice-/releases">GitHub Releases</a> for future updates (auto-detected inside the app).</sub>
+### ⬇️ [Download EnglishPractice.apk (v2.2.0 — Direct Download)](https://github.com/Shajidur-Rahman/English-Practice-/raw/main/download/EnglishPractice.apk)
+<sub>Direct Android APK (`v2.2.0`) • Also check <a href="https://github.com/Shajidur-Rahman/English-Practice-/releases">GitHub Releases</a> for future updates (auto-detected inside the app).</sub>
 
 </div>
 
@@ -37,11 +37,10 @@ Practicing from dense textbook pages and flipping back and forth to cluttered so
 
 ## 🚀 Core Features
 
-### 1. 💜 Mother's Test *(Oral Testing & Verification Mode)*
+### 1. 💜 Mother's Test *(Read-Only Oral Testing & Verification Mode)*
 Designed specifically so your mother (or a study partner) can quiz you effortlessly without squinting at tiny textbook solution lines:
 - **Clean Topic & Passage Picker:** Full searchable list of all 76 Article and 80 Preposition passages.
-- **5 + 5 Split Answer Grid:** Displays blanks **`(a)–(e)` on the left** and **`(f)–(j)` on the right** in large, clear typography.
-- **Tap-to-Mark Oral Tally:** Tap any answer tile to mark `✗` or `✓` while testing, then save marked mistakes directly to **Flash Memory** in one tap.
+- **100% Read-Only & Customizable (`Customize` Button):** Switch effortlessly between **5 + 5 Split** (`a–e` left, `f–j` right), **One Line Each**, **2-Line Compact**, or **Full Page (All)** continuous sheet view, plus an **Answer Text Size** slider (`Normal` → `Huge 175%`) and **Minimal Header** toggle.
 - **`Before` & `Next` Navigation:** Move smoothly from passage to passage.
 - **✨ Magic • Real Book Button:** Instantly reveals the **real cropped photo from the printed book solution sheet** (highlighted with a blue frame around that exact row, with pinch, double-tap, and fullscreen zoom) so you can verify every single answer with your own eyes.
 

@@ -129,6 +129,13 @@ data class ExamHistoryEntry(
     val hscHalfMarkScale: Boolean
 )
 
+enum class MothersLayoutMode(val label: String, val subtitle: String) {
+    SPLIT_5_5("5 + 5 Split", "5 answers left (a–e), 5 right (f–j)"),
+    ONE_PER_LINE("One Line Each", "Single column, maximum width & size"),
+    TWO_LINE_SHEET("2-Line Compact", "5 answers in top block, 5 below"),
+    FULL_PAGE("Full Page (All)", "Scroll all passages on one clean sheet")
+}
+
 data class AppPreferences(
     val darkMode: Boolean? = null, // null = follow system
     val invertPassageInDark: Boolean = true,
@@ -136,7 +143,10 @@ data class AppPreferences(
     val defaultStrictCase: Boolean = false,
     val defaultHscHalfMark: Boolean = true,
     val preferTextViewWhenAvailable: Boolean = true,
-    val autoSaveMistakesToFlashcards: Boolean = true
+    val autoSaveMistakesToFlashcards: Boolean = true,
+    val mothersLayout: MothersLayoutMode = MothersLayoutMode.SPLIT_5_5,
+    val mothersTextScale: Float = 1.15f,
+    val mothersMinimalHeader: Boolean = false
 )
 
 data class UserProgressData(

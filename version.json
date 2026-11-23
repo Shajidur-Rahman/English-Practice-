@@ -1,7 +1,7 @@
 {
-  "version": "v2.3.0",
-  "title": "English Practice v2.3.0",
-  "date": "2026-11-19",
-  "notes": "• True In-App Auto-Updater popup + direct APK download & install\n• Read-only Mother's Test with Customize sheet (5+5, 1-line, 2-line, Full Page, Huge text)\n• Real printed book solution photos (✨ Magic button)\n• Articles (760 blanks) + Prepositions (800 blanks) + SQLite Flash Memory",
+  "version": "v2.4.0",
+  "title": "English Practice v2.4.0 — New Panjeree Articles Book",
+  "date": "2026-11-23",
+  "notes": "• Upgraded Articles database to new Panjeree book: 112 passages (1,120 blanks)\n• Articles Board Qs #1–#64 (2009–2026) + Practice #65–#112 (Renowned Colleges)\n• 112 new deskewed passage cards + 112 real book solution photos\n• Prepositions (80 passages, 800 blanks) preserved intact + SQLite Flash Memory",
   "apkUrl": "https://github.com/Shajidur-Rahman/English-Practice-/raw/main/download/EnglishPractice.apk"
 }

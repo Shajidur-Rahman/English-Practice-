@@ -281,7 +281,7 @@ fun HomeScreen(
                 ) {
                     TopicMenuCard(
                         title = "Articles",
-                        subtitle = "${state.articleExercises.size} Qs • 760 Blanks",
+                        subtitle = "${state.articleExercises.size} Qs • ${state.articleExercises.size * 10} Blanks",
                         progressText = "$artMastered mastered • $artAttempted done",
                         progress = artAttempted.toFloat() / artTotal.toFloat(),
                         accent = IndigoPrimary,
@@ -558,8 +558,8 @@ fun HomeScreen(
             }
 
             item {
-                val boardRangeText = if (activeTopic == GrammarTopic.ARTICLE) "1–24" else "1–56"
-                val boardYearsText = if (activeTopic == GrammarTopic.ARTICLE) "2016–2019 Boards" else "2016–2025 Boards"
+                val boardRangeText = if (activeTopic == GrammarTopic.ARTICLE) "1–64" else "1–56"
+                val boardYearsText = if (activeTopic == GrammarTopic.ARTICLE) "2009–2026 Boards" else "2016–2025 Boards"
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.spacedBy(8.dp)

@@ -224,15 +224,15 @@ class AnswerEvaluatorTest {
         )
         assertTrue(same is UpdateCheckResult.UpToDate)
 
-        // Fallback manifest version check (v2.3.0 > 2.1.0)
+        // Fallback manifest version check (v2.4.0 > 2.3.0)
         val manifestNewer = GitHubUpdateChecker.evaluateRelease(
-            tag = "v2.3.0",
-            title = "English Practice v2.3.0",
-            releaseNotes = "Auto-update manifest",
+            tag = "v2.4.0",
+            title = "English Practice v2.4.0",
+            releaseNotes = "New 112-question Panjeree Articles database",
             htmlUrl = GitHubUpdateChecker.RELEASES_PAGE_URL,
             apkDownloadUrl = GitHubUpdateChecker.DIRECT_APK_URL,
-            publishedAt = "2026-11-19",
-            currentVersion = "2.1.0"
+            publishedAt = "2026-11-23",
+            currentVersion = "2.3.0"
         )
         assertTrue(manifestNewer is UpdateCheckResult.UpdateAvailable)
         assertEquals(
@@ -248,7 +248,7 @@ class AnswerEvaluatorTest {
         val artJson = File(assetsDir, "answer_keys.json")
         assertTrue("answer_keys.json must exist at ${artJson.absolutePath}", artJson.exists())
         val artRaw = artJson.readText()
-        for (id in 1..76) {
+        for (id in 1..112) {
             val padded = id.toString().padStart(2, '0')
             val img = File(assetsDir, "passages/p_$padded.webp")
             assertTrue("Missing article asset ${img.path}", img.exists() && img.length() > 1000)

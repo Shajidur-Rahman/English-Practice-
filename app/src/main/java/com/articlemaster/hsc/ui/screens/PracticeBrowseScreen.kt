@@ -198,8 +198,8 @@ fun PracticeBrowseScreen(
                 items(BrowseFilter.entries) { filter ->
                     val label = when (filter) {
                         BrowseFilter.ALL -> "All (${topicExercises.size})"
-                        BrowseFilter.BOARD -> if (topic == GrammarTopic.ARTICLE) "Board (1–24)" else "Board (1–56)"
-                        BrowseFilter.PRACTICE -> if (topic == GrammarTopic.ARTICLE) "Practice (25–76)" else "Practice (57–80)"
+                        BrowseFilter.BOARD -> if (topic == GrammarTopic.ARTICLE) "Board (1–64)" else "Board (1–56)"
+                        BrowseFilter.PRACTICE -> if (topic == GrammarTopic.ARTICLE) "Practice (65–112)" else "Practice (57–80)"
                         BrowseFilter.MISTAKES -> "Mistakes"
                         BrowseFilter.BOOKMARKED -> "Bookmarked"
                         BrowseFilter.UNATTEMPTED -> "Unattempted"

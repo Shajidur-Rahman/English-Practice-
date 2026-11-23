@@ -221,9 +221,9 @@ fun ExamBuilderScreen(
                     Spacer(Modifier.height(6.dp))
                     Text(
                         when (topicFilter) {
-                            ExamTopicFilter.ARTICLE -> "Articles: 76 passages (Board 1–24, Practice 25–76)."
+                            ExamTopicFilter.ARTICLE -> "Articles: 112 passages (Board 1–64, Practice 65–112)."
                             ExamTopicFilter.PREPOSITION -> "Prepositions: 80 passages (Board 1–56, Practice 57–80)."
-                            ExamTopicFilter.BOTH -> "Mixed Exam: Combines Articles (76) + Prepositions (80) = 156 passages!"
+                            ExamTopicFilter.BOTH -> "Mixed Exam: Combines Articles (112) + Prepositions (80) = 192 passages!"
                         },
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
@@ -319,7 +319,7 @@ fun ExamBuilderScreen(
                                 )
                             }
                             val presets = if (topicFilter == ExamTopicFilter.ARTICLE) {
-                                listOf(1 to 10, 1 to 24, 25 to 50, 51 to 76)
+                                listOf(1 to 10, 1 to 64, 65 to 112, 1 to 112)
                             } else {
                                 listOf(1 to 15, 1 to 56, 57 to 80, 1 to 80)
                             }

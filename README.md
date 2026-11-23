@@ -7,11 +7,11 @@
 [![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/Shajidur-Rahman/English-Practice-/releases)
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.0-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org/)
 [![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-Material%203-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white)](https://developer.android.com/jetpack/compose)
-[![Passages](https://img.shields.io/badge/Passages-156%20(1%2C560%20Blanks)-0D9488?style=for-the-badge)](#-content-coverage)
-[![Version](https://img.shields.io/badge/Latest-v2.3.0-1D4ED8?style=for-the-badge)](https://github.com/Shajidur-Rahman/English-Practice-/releases/latest)
+[![Passages](https://img.shields.io/badge/Passages-192%20(1%2C920%20Blanks)-0D9488?style=for-the-badge)](#-content-coverage)
+[![Version](https://img.shields.io/badge/Latest-v2.4.0-1D4ED8?style=for-the-badge)](https://github.com/Shajidur-Rahman/English-Practice-/releases/latest)
 
-### ⬇️ [Download EnglishPractice.apk (v2.3.0 — Direct Download)](https://github.com/Shajidur-Rahman/English-Practice-/raw/main/download/EnglishPractice.apk)
-<sub>Direct Android APK (`v2.2.0`) • Also check <a href="https://github.com/Shajidur-Rahman/English-Practice-/releases">GitHub Releases</a> for future updates (auto-detected inside the app).</sub>
+### ⬇️ [Download EnglishPractice.apk (v2.4.0 — Direct Download)](https://github.com/Shajidur-Rahman/English-Practice-/raw/main/download/EnglishPractice.apk)
+<sub>Direct Android APK (`v2.4.0`) • Also check <a href="https://github.com/Shajidur-Rahman/English-Practice-/releases">GitHub Releases</a> for future updates (auto-detected inside the app).</sub>
 
 </div>
 
@@ -19,7 +19,7 @@
 
 ## ✨ Why English Practice?
 
-Practicing from dense textbook pages and flipping back and forth to cluttered solution sheets slows down revision. **English Practice** packages **all 156 original book passages** and **1,560 verified solution keys** into a clean, zero-distraction mobile workspace with exam simulation, oral testing for parents, and an automatic SQLite spaced-repetition mistake bank.
+Practicing from dense textbook pages and flipping back and forth to cluttered solution sheets slows down revision. **English Practice** packages **all 192 original book passages** and **1,920 verified solution keys** into a clean, zero-distraction mobile workspace with exam simulation, oral testing for parents, and an automatic SQLite spaced-repetition mistake bank.
 
 ---
 
@@ -27,9 +27,9 @@ Practicing from dense textbook pages and flipping back and forth to cluttered so
 
 | Topic | Total Passages | Total Blanks | HSC Board Questions | Practice Exercises | Book Reference |
 | :--- | :---: | :---: | :---: | :---: | :--- |
-| **Articles** | **76** | **760** | `#1–#24` *(2016–2019)* | `#25–#76` | Pages 49–56 |
+| **Articles** | **112** | **1,120** | `#1–#64` *(2009–2026)* | `#65–#112` *(2026 & Colleges)* | Pages 46–58 |
 | **Prepositions** | **80** | **800** | `#1–#56` *(2016–2025)* | `#57–#80` | Pages 84–91 |
-| **Combined** | **156** | **1,560** | **80 Board Sets** | **76 Practice Sets** | **100% Offline** |
+| **Combined** | **192** | **1,920** | **120 Board Sets** | **72 Practice Sets** | **100% Offline** |
 
 > Every answer key supports official multi-option slash variants (e.g., `a/the`, `the/×`, `of/for/about`, `before/in/in front of`) and optional strict capitalization checks (`A`/`An`/`The`, `In`/`For`/`After`/`With`).
 
@@ -39,7 +39,7 @@ Practicing from dense textbook pages and flipping back and forth to cluttered so
 
 ### 1. 💜 Mother's Test *(Read-Only Oral Testing & Verification Mode)*
 Designed specifically so your mother (or a study partner) can quiz you effortlessly without squinting at tiny textbook solution lines:
-- **Clean Topic & Passage Picker:** Full searchable list of all 76 Article and 80 Preposition passages.
+- **Clean Topic & Passage Picker:** Full searchable list of all 112 Article and 80 Preposition passages.
 - **100% Read-Only & Customizable (`Customize` Button):** Switch effortlessly between **5 + 5 Split** (`a–e` left, `f–j` right), **One Line Each**, **2-Line Compact**, or **Full Page (All)** continuous sheet view, plus an **Answer Text Size** slider (`Normal` → `Huge 175%`) and **Minimal Header** toggle.
 - **`Before` & `Next` Navigation:** Move smoothly from passage to passage.
 - **✨ Magic • Real Book Button:** Instantly reveals the **real cropped photo from the printed book solution sheet** (highlighted with a blue frame around that exact row, with pinch, double-tap, and fullscreen zoom) so you can verify every single answer with your own eyes.
@@ -90,15 +90,15 @@ Never lose track of the blanks you miss:
 | **Progress & Backup** | Local JSON persistence + Full Export/Import (stats, texts, flashcards) |
 | **On-Device OCR** | Google ML Kit Text Recognition (`com.google.mlkit:text-recognition`) |
 | **Updates** | GitHub Releases REST API (`HttpURLConnection`, zero extra network bloat) |
-| **Media Assets** | 156 deskewed passage WebPs + 156 highlighted real solution WebPs |
+| **Media Assets** | 192 deskewed passage WebPs + 192 real printed solution WebPs |
 
 ```text
 app/src/main/
 ├── assets/
-│   ├── answer_keys.json              # 76 Article keys (760 blanks)
+│   ├── answer_keys.json              # 112 Article keys (1,120 blanks)
 │   ├── preposition_answer_keys.json  # 80 Preposition keys (800 blanks)
-│   ├── passages/                     # p_01..76.webp & prep_01..80.webp
-│   └── solutions/                    # sol_art_01..76.webp & sol_prep_01..80.webp
+│   ├── passages/                     # p_01..112.webp & prep_01..80.webp
+│   └── solutions/                    # sol_art_01..112.webp & sol_prep_01..80.webp
 └── java/com/articlemaster/hsc/
     ├── MainActivity.kt               # Bottom navigation & route host
     ├── data/

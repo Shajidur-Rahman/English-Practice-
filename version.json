@@ -1,7 +1,7 @@
 {
-  "version": "v2.4.0",
-  "title": "English Practice v2.4.0 — New Panjeree Articles Book",
+  "version": "v2.4.1",
+  "title": "English Practice v2.4.1 — Full 112-Article Edge Polish",
   "date": "2026-11-23",
-  "notes": "• Upgraded Articles database to new Panjeree book: 112 passages (1,120 blanks)\n• Articles Board Qs #1–#64 (2009–2026) + Practice #65–#112 (Renowned Colleges)\n• 112 new deskewed passage cards + 112 real book solution photos\n• Prepositions (80 passages, 800 blanks) preserved intact + SQLite Flash Memory",
+  "notes": "• Full 1-to-112 side-by-side audit verified 1,120/1,120 Article blanks exact\n• Widened right margins on pages 47–51, 53, 55, 57 so zero end-of-line letters clip\n• Fixed tight top/bottom edges on Q57, Q72, Q74, Q83, Q87–88, Q92, Q94–95, Q102, Q105–106, Q111\n• Polished solution cards Q68 & Q83 for Mother's Test",
   "apkUrl": "https://github.com/Shajidur-Rahman/English-Practice-/raw/main/download/EnglishPractice.apk"
 }

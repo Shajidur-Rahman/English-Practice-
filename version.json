@@ -1,7 +1,7 @@
 {
-  "version": "v2.4.1",
-  "title": "English Practice v2.4.1 — Full 112-Article Edge Polish",
+  "version": "v2.4.2",
+  "title": "English Practice v2.4.2 — Instant Custom Range Picker",
   "date": "2026-11-23",
-  "notes": "• Full 1-to-112 side-by-side audit verified 1,120/1,120 Article blanks exact\n• Widened right margins on pages 47–51, 53, 55, 57 so zero end-of-line letters clip\n• Fixed tight top/bottom edges on Q57, Q72, Q74, Q83, Q87–88, Q92, Q94–95, Q102, Q105–106, Q111\n• Polished solution cards Q68 & Q83 for Mother's Test",
+  "notes": "• Brand-new Instant Custom Range Picker in Exam Builder: type exact From # / To # numbers directly (with 1-tap clear), drag the dual-thumb Range Slider, tap smart preset chips, or use the 2-Tap Visual Grid (Tap Start → Tap End)\n• Custom Range now works across Articles, Prepositions, and Mixed topics\n• Includes all 112 verified Panjeree Articles (1,120 blanks) + 80 Prepositions (800 blanks)",
   "apkUrl": "https://github.com/Shajidur-Rahman/English-Practice-/raw/main/download/EnglishPractice.apk"
 }
